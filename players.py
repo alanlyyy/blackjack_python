@@ -25,6 +25,9 @@ class Player:
         
         self.hand_score = 0
     
+    def set_hand(self,card):
+        self.hand.append(card)
+    
     def reset_hand(self):
         """reset hand"""
         self.hand = []
