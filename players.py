@@ -76,4 +76,11 @@ class Player:
     def get_hand_score(self):
         return self.hand_score
         
+    def player_stats(self):
+        print("Purse: ", self.get_purse())
+        print("Current Bet: ", self.get_current_bet())
     
+    def player_show_hand(self):
+        """prints players cards in hand."""
+        for card in self.get_hand():
+            print(card.get_card())
